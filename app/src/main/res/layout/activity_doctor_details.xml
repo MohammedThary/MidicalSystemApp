@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activities.DoctorDetails"
+    android:backgroundTint="@color/background_login"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_login"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="75dp">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_group_24" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/doctorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/profile_photo"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctorname"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/profile_photo"
+                android:text="Specialty"
+                android:textSize="15dp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rating_card"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/specialty"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@id/profile_photo"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_star_24" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/rating_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/specialty"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/rating_card"
+                android:text="Rating"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating_text_view"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/rating_card"
+                android:text="4.5 out of 5"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/patients_card"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/rating_card"
+                android:layout_toEndOf="@id/profile_photo"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_group_24" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/patient_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating_card"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/patients_card"
+                android:text="Patient"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/patient_text_view"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/patients_card"
+                android:text="1000+"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/Saturday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_textview"
+                        android:padding="10dp"
+                        android:text="السبت"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/Sunday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_textview"
+                        android:padding="10dp"
+                        android:text="الأحد"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/Monday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_textview"
+                        android:padding="10dp"
+                        android:text="الاثنين"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/Thursday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_textview"
+                        android:padding="10dp"
+                        android:text="الثلاثاء"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/Wednesday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_textview"
+                        android:padding="10dp"
+                        android:text="الأربعاء"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/Tuesday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_textview"
+                        android:padding="10dp"
+                        android:text="الخميس"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pook_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_login"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

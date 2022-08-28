@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/background_login"
+
+    tools:context=".UI.Activities.updatePatientAppointment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/Saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_textview"
+                    android:padding="10dp"
+                    android:text="السبت"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/Sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_textview"
+                    android:padding="10dp"
+                    android:text="الأحد"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/Monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_textview"
+                    android:padding="10dp"
+                    android:text="الإثنين"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/Thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_textview"
+                    android:padding="10dp"
+                    android:text="الثلاثاء"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/Wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_textview"
+                    android:padding="10dp"
+                    android:text="الأربعاء"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/Tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_textview"
+                    android:padding="10dp"
+                    android:text="الخميس"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_login"
+
+            android:id="@+id/pook_rv"/>
+
+    </LinearLayout>
+</RelativeLayout>

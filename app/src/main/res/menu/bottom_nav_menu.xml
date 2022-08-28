@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="الرئيسية"
+
+        android:icon="@drawable/home_icon"
+        android:id="@+id/home_menu_item"/>
+
+
+    <item
+        android:title="المواعيد"
+        android:icon="@drawable/appointment_calender_icon"
+        android:id="@+id/appointment_menu_item"/>
+    <item android:title="الجدولة"
+        android:icon="@drawable/scech_ic"
+        android:id="@+id/scheduling_menu_item"/>
+
+    <item android:title="الأدوية"
+        android:icon="@drawable/ic_pills_solid"
+        android:id="@+id/medicine_menu_item"/>
+
+
+    <item android:title="الملف الشخصي"
+        android:icon="@drawable/medicine_icon"
+        android:id="@+id/profile_menu_item"
+       />
+
+
+</menu>

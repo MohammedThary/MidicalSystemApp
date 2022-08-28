@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="com.example.midicalsystemapp.UI.Fragments.AllergiesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:backgroundTint="@color/teal_700"
+        android:foreground="@drawable/ic_baseline_add_24" />
+
+
+    <LinearLayout
+        android:id="@+id/add_xray_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_disease_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_x_ray_solid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="XRay"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_disease_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_medical_test"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_baseline_health_and_safety_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Disease"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_medical_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_allergy_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_microscope_solid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Test"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_heart_pulse_solid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Operation"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_allergy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_operation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_hand_dots_solid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Allergy"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

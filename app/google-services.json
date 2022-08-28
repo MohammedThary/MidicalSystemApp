@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "619693547120",
+    "project_id": "midical-care",
+    "storage_bucket": "midical-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619693547120:android:de190b718040ae1bd09eb5",
+        "android_client_info": {
+          "package_name": "com.example.midicalsystemapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619693547120-ca2g6be7ih6rg48i15g92m8499d0hqmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp_e_LTIYUc1kdNov81aWW73PwjtGjPeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619693547120-ca2g6be7ih6rg48i15g92m8499d0hqmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619693547120:android:c6347b54a78d76e5d09eb5",
+        "android_client_info": {
+          "package_name": "com.example.testfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619693547120-ca2g6be7ih6rg48i15g92m8499d0hqmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp_e_LTIYUc1kdNov81aWW73PwjtGjPeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619693547120-ca2g6be7ih6rg48i15g92m8499d0hqmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
